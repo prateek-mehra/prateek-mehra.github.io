@@ -1,2 +1,3 @@
-# prateek-mehra.github.io
-My portfolio: [prateek-mehra.github.io](prateek-mehra.github.io)
+# My Portfolio
+To know more about me, visit: [prateek-mehra.github.io](prateek-mehra.github.io)
+
