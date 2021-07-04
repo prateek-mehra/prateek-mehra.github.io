@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prateek's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;1,900&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="index.html#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Introduction-->
+    <section class="intro" id="home">
+        <h1 class="seciton__title section__title--intro">
+            <strong>Car Price Predictor</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">ML, WebD</p>
+        <img src="img/car1.JPG" alt="a picture of me smiling" class="intro__img">
+    </section>
+
+    <a href="https://car-price-predictor-pm.herokuapp.com/" class="btn" target="_blank" style="display:flex; justify-content:center;">Visit the live App</a>
+
+
+    <div class="portfolio-item-individual">
+        <p>
+            <ul type="circle">
+                <li>A RandomForestRegressor model was trained on the CarDekho dataset from Kaggle post basic feature engineering.</li>
+                <li>Hyperparameter tuning was performed for better model accuracy.</li>
+                <li>The jupyter notebook containing the model was integrated to the Flask backend using pickle, after which it was deployed as a web-app on Heroku.</li>
+                Tools: Python, Jinja2 template engine, Flask framework, NumPy, pandas, sklearn, HTML and CSS.
+                        
+                
+            </ul>
+        </p>
+        <img>
+        <p></p>
+    </div>
+    <a href="http://github.com/prateek-mehra/car-price-predictor" class="btn" target="_blank" style="display:flex; justify-content:center;">View on Github</a>
+
+
+   
+
+    <!--Footer-->
+
+    <footer class="footer">
+        <!--partumehra@gmail.com-->
+        <a href="mailto:partumehra@gmail.com" class="footer__link">partumehra@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" target="_blank" href="http://twitter.com/ZeroYgrittes"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" target="_blank" href="http://github.com/prateek-mehra">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" target="_blank" href="http://hackerrank.com/prateek_mehra">
+                    <i class="fab fa-hackerrank"></i></a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" target="_blank" href="http://linkedin.com/in/1prateekmehra1"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
