@@ -1,147 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prateek's Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;1,900&display=swap');
-    </style>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prateek Mehra — Data Scientist</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-        </button>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!--Introduction-->
-    <section class="intro" id="home">
-        <h1 class="section__title section__title--intro">
-            <br>
-            Hi, I am <strong>Prateek Mehra</strong>
-        </h1>
-        <p class="section__subtitle section__subtitle--intro">back-end dev</p>
-        <img src="img/PROPIC.jpg" alt="a picture of me smiling" class="intro__img">
+  <main class="container">
+
+    <!-- Header -->
+    <section class="header">
+      <h1>Prateek Mehra</h1>
+      <p class="subtitle">Data Scientist · 3.5 years · Applied ML Systems</p>
+      <p class="tagline">
+        I build end-to-end machine learning systems that ship to production and don’t break.
+      </p>
+
+      <nav class="links">
+        <a href="https://github.com/prateek-mehra" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/1prateekmehra1" target="_blank">LinkedIn</a>
+        <a href="Prateek_CVD.pdf" target="_blank">Resume</a>
+        <a href="mailto:partumehra@gmail.com">Email</a>
+      </nav>
     </section>
 
-   
-
-    <!--About Me-->
-    <section class="about-me" id="about">
-        <h2 class="section__title section__title--about">Who I am</h2>
-        <p class="section__subtitile section__subtitle--about">Backend Dev Based Out Of India</p>
-
-        <div class="about-me__body">
-            <p>I'm an undergraduate student at MNNIT Allahabad interested in solving problems involving the use of Data 
-                Structures and Algorithms. I've been a regional qualifier of the International Collegiate Programming Contest
-                and have solved more than 1000 problems on different competitive programming platforms. In my side projects, 
-                I've also delved a bit into the fields of Machine Learning, Web Development and Data Analysis.</p>
-            <p>My experience includes working in Glabbr Technologies as a Software Development Intern from March-May 2021 
-                wherein I worked on creating, testing and deploying RESTful APIs built around the controller-service-repository 
-                architecture for the BOM Service involving graph traversals. I also designed cypher queries for the service on 
-                neo4j and successfully integrated them with the code base post performing unit testing involving corner cases.</p>
-        </div>
-        <img src="img/IMG_20180809_000042_068.jpg" alt="another image of mine" class="about-me__img">
+    <!-- What I Do -->
+    <section>
+      <h2>What I Do</h2>
+      <ul>
+        <li>Computer vision systems (detection, recognition, OCR)</li>
+        <li>Time-series forecasting for business decisions</li>
+        <li>Unsupervised learning & clustering at scale</li>
+        <li>Production ML pipelines (training → monitoring)</li>
+      </ul>
     </section>
 
-     <!--My services-->
+    <!-- Experience -->
+    <section>
+      <h2>Experience</h2>
 
-     <section class="my-services" id="services">
-            <h2 class="section__title section__title--services">What I do</h2>
-            <div class="services">
-                <div class="service">
-                    <h3>Data Analysis + Machine Learning</h3>
-                    <p>All of my projects involve the use of data analysis in some form. Whether it be exploratory data analysis of a dataset fetched
-                        from websites like kaggle, or developing a basic mathematical algorithm based on a few features extracted from the dataset, I've
-                        been exploring it all. Moreover, I've also performed cross validation and feature engineering to select the best hyperparameters
-                        for my models based on algorithms like the RandomForestRegressor, post understanding the background working of the algorithm.
-                    </p>
-                </div>
-                <!--/ service-->
-                <div class="service">
-                    <h3>Data Structures and Algorithms</h3>
-                    <p>Throughout my college years, I've been participating in competitive programming contests offline and online. 
-                        Visualizing the working of an algorithm and trying to employ patterns and observations made through continuous analysis
-                        of the ongoing process, in order to optimise the time and space taken to solve a problem, is the part I like the most about
-                        problem solving involving the use of advanced data structures and algorithms. Problem solving also leads us to tweak our creative
-                        thinking ability by making us try to employ different methods to solve a particular problem, which also leads to a better 
-                        critical thinking mind in the long run, another aspect that I love about solving computational problems.
-                    </p>
-                </div>
-     
-            </div>
-            </div>
-            <!--services-->
-           <!--<a href="#work" class="btn">My Work</a>--> 
-        </section>
-
-    <!--My Work-->
-    <section class="my-work" id="work">
-        <h2 class="section__title section__title--work">My Work</h2>
-        <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
-        <div class="portfolio">
-            <!--Portfolio item-01-->
-            <a href="portfolio-item-1.html" class="portfolio__item" target="_blank">
-                <img src="img/car1.JPG" alt="" class="portfolio__img">
-            </a>
-            <!--Portfolio item-01-->
-            <a href="portfolio-item-2.html" class="portfolio__item" target="_blank">
-                <img src="img/cfsugg.JPG" alt="" class="portfolio__img">
-            </a>
-            <!--Portfolio item-01-->
-            <a href="portfolio-item-3.html" class="portfolio__item" target="_blank">
-                <img src="img/prez.JPG" alt="" class="portfolio__img">
-            </a>
-        </div>
+      <div class="item">
+        <h3>Data Scientist — EatClub Brands (Box8)</h3>
+        <p class="meta">Bengaluru · 2022 — Present</p>
+        <ul>
+          <li>Built and deployed CV pipelines processing 1M+ images/month</li>
+          <li>Designed end-to-end ML workflows using Airflow and MLflow</li>
+          <li>Reduced manual operations effort by ~40% via automation</li>
+          <li>Owned model monitoring, retraining, and failure analysis</li>
+        </ul>
+      </div>
     </section>
 
-    
+    <!-- Projects -->
+    <section>
+      <h2>Selected Projects</h2>
 
-    <!--Footer-->
+      <div class="project">
+        <h3>Face Recognition from CCTV Streams</h3>
+        <p class="label">Problem</p>
+        <p>Unstable CCTV frames causing false absences in attendance systems</p>
 
-    <footer class="footer">
-            <!--partumehra@gmail.com-->
-            <a href="mailto:partumehra@gmail.com" class="footer__link">partumehra@gmail.com</a>
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" target="_blank" href="http://twitter.com/ZeroYgrittes"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" target="_blank" href="http://github.com/prateek-mehra">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" target="_blank" href="http://hackerrank.com/prateek_mehra">
-                        <i class="fab fa-hackerrank"></i></a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" target="_blank" href="http://linkedin.com/in/1prateekmehra1"><i class="fab fa-linkedin-in"></i></a>
-                </li>
-            </ul>
-        </footer>
-    
+        <p class="label">Approach</p>
+        <p>Temporal smoothing and confidence aggregation across frames</p>
 
-    <script src="js/index.js"></script>
+        <p class="label">Outcome</p>
+        <p>Reduced false negatives by ~30% in production</p>
+
+        <p class="stack">Python · OpenCV · FaceNet · Airflow</p>
+      </div>
+
+      <div class="project">
+        <h3>Demand Forecasting for Store-Level Planning</h3>
+        <p class="label">Problem</p>
+        <p>High variance demand leading to over- and under-production</p>
+
+        <p class="label">Approach</p>
+        <p>Prophet baseline with LSTM residual learning</p>
+
+        <p class="label">Outcome</p>
+        <p>MAPE improved from 21% to 13%</p>
+
+        <p class="stack">Time Series · Prophet · LSTM</p>
+      </div>
+
+      <div class="project">
+        <h3>Customer Segmentation via Clustering</h3>
+        <p class="label">Problem</p>
+        <p>No interpretable customer segments for targeting</p>
+
+        <p class="label">Approach</p>
+        <p>DBSCAN with feature engineering and post-hoc profiling</p>
+
+        <p class="label">Outcome</p>
+        <p>Enabled 3 actionable customer cohorts used by marketing</p>
+
+        <p class="stack">DBSCAN · Unsupervised Learning</p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section>
+      <h2>Skills</h2>
+      <p>
+        <strong>Languages:</strong> Python, SQL<br>
+        <strong>ML:</strong> Computer Vision, Time Series, Clustering, Classical ML<br>
+        <strong>Frameworks:</strong> TensorFlow, PyTorch, scikit-learn<br>
+        <strong>Systems:</strong> Airflow, MLflow, Docker
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>Open to senior IC roles · Bengaluru / Remote</p>
+    </footer>
+
+  </main>
 
 </body>
-
 </html>

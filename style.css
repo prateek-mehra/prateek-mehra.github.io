@@ -1,0 +1,121 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+  color: #111;
+  background: #fff;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 720px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+/* Typography */
+h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 4px;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: "–  ";
+  padding-left: 16px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+/* Header */
+.header {
+  margin-bottom: 48px;
+}
+
+.subtitle {
+  color: #555;
+  margin-top: 4px;
+}
+
+.tagline {
+  margin-top: 16px;
+  max-width: 600px;
+}
+
+.links {
+  margin-top: 16px;
+}
+
+.links a {
+  margin-right: 14px;
+  text-decoration: none;
+  color: #1f3a8a;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+section {
+  margin-bottom: 48px;
+}
+
+.meta {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.item ul {
+  margin-top: 8px;
+}
+
+/* Projects */
+.project {
+  margin-bottom: 32px;
+}
+
+.label {
+  font-size: 0.75rem;
+  color: #666;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.stack {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.8rem;
+  color: #444;
+  margin-top: 6px;
+}
+
+/* Footer */
+footer {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 60px;
+}
