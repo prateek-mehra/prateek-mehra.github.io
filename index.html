@@ -13,7 +13,7 @@
     <!-- Header -->
     <section class="header">
       <h1>Prateek Mehra</h1>
-      <p class="subtitle">ML Systems & Vision Engineer · 3.5 years</p>
+      <p class="subtitle">ML Systems & Vision Engineer · <span id="experience-duration">3 years 10 months</span></p>
       <p class="tagline">
         Built and deployed business-facing CV inference pipelines serving 100M+ images/month across batch and real-time workloads.
       </p>
@@ -61,6 +61,31 @@
     </footer>
 
   </main>
+
+  <script>
+    (function updateExperienceDuration() {
+      const experienceNode = document.getElementById("experience-duration");
+
+      if (!experienceNode) return;
+
+      const startDate = new Date(2022, 5, 1);
+      const today = new Date();
+
+      let years = today.getFullYear() - startDate.getFullYear();
+      let months = today.getMonth() - startDate.getMonth();
+
+      if (today.getDate() < startDate.getDate()) {
+        months -= 1;
+      }
+
+      if (months < 0) {
+        years -= 1;
+        months += 12;
+      }
+
+      experienceNode.textContent = years + " years " + months + " months";
+    })();
+  </script>
 
 </body>
 </html>
