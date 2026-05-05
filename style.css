@@ -71,11 +71,16 @@ li {
 
 .links a {
   margin-right: 14px;
+}
+
+.links a,
+.tinkering a {
   text-decoration: none;
   color: #1f3a8a;
 }
 
-.links a:hover {
+.links a:hover,
+.tinkering a:hover {
   text-decoration: underline;
 }
 
@@ -97,6 +102,15 @@ section {
 /* Projects */
 .project {
   margin-bottom: 32px;
+}
+
+.tinkering-item {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.tinkering-item:last-child {
+  margin-bottom: 0;
 }
 
 .label {
