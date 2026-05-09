@@ -13,10 +13,21 @@
     <!-- Header -->
     <section class="header">
       <h1>Prateek Mehra</h1>
-      <p class="subtitle">ML Systems & Vision Engineer · <span id="experience-duration">3 years 10 months</span></p>
-      <p class="tagline">
-        Built and deployed business-facing CV inference pipelines serving 100M+ images/month across batch and real-time workloads.
+      <p class="subtitle">
+        Applied ML Engineer building production computer vision systems
       </p>
+      <p class="meta">
+        4 years experience · Bengaluru
+      </p>
+      <p class="tagline">
+        Built and deployed production computer vision pipelines serving 100M+ images/month across batch and real-time workloads.
+      </p>
+      <div class="stats">
+        <span>450+ outlets</span>
+        <span>100M+ images/month</span>
+        <span>40k+ daily inferences</span>
+        <span>0.947 mAP@0.5</span>
+      </div>
 
       <nav class="links">
         
@@ -33,14 +44,20 @@
       <h2>Experience</h2>
 
       <div class="item">
-        <h3>Software Development Engineer — Data Tech, EatClub Brands (Box8)</h3>
+        <h3>Applied ML Engineer - Data Tech, EatClub Brands (Box8)</h3>
         <p class="meta">Bengaluru · 2022 — Present</p>
         <ul>
-          <li>Designed and operated distributed cloud–edge ML infrastructure across 450+ outlets with on-device inference.
-
-</li>
-          <li>Own end-to-end model lifecycle: data → training → deployment → monitoring.</li>
+          <li>
+            Built and deployed production computer vision pipelines for operational auditing, anomaly detection and OCR across 450+ outlets.
+          </li>
+          <li>
+            Owned end-to-end ML lifecycle: data curation → training → deployment → monitoring → iterative threshold tuning.
+          </li>
         </ul>
+        <p class="focus">
+          Currently exploring:
+          edge AI · real-time CV · multimodal systems · low-latency inference
+        </p>
       </div>
     </section>
 
@@ -48,10 +65,10 @@
     <section>
       <h2>Skills</h2>
       <p>
-        <strong>Languages:</strong> Python, SQL<br>
-        <strong>Frameworks:</strong> TensorFlow, PyTorch, scikit-learn, OpenCV<br>
-        <strong>Systems:</strong> Airflow, Docker, Linux<br>
-        <strong>Cloud:</strong> GCP, AWS
+        <strong>ML:</strong> PyTorch, TensorFlow, OpenCV, scikit-learn<br>
+        <strong>Systems:</strong> Airflow, Docker, Linux, real-time inference<br>
+        <strong>Infra:</strong> AWS, GCP, monitoring, cloud-edge deployments<br>
+        <strong>Languages:</strong> Python, SQL
       </p>
     </section>
     <section class="tinkering">
@@ -59,62 +76,36 @@
 
       <div class="tinkering-item">
         <p>
+          <a href="https://github.com/prateek-mehra/jalLijiye" target="_blank">
+            JalLijiye
+          </a>: JalLijiye: Real-time hydration monitoring using YOLOv8n, lightweight inference optimization and heuristic-driven activity tracking.
+        </p>
+      </div>
+
+      <div class="tinkering-item">
+        <p>
           <a href="https://github.com/prateek-mehra/where-did-i-apply" target="_blank">
             Where did I apply
-          </a>: Chrome extension for job application tracking over different platforms.
+          </a>: Chrome extension for tracking job applications across platforms.
         </p>
-        <img src="assets/where-did-i-apply-demo.gif" width="700" alt="Where did I apply demo">
+        <img src="assets/where-did-i-apply-demo.gif" alt="Where did I apply demo">
       </div>
 
       <div class="tinkering-item">
         <p>
           <a href="https://minimal-eisenhower.vercel.app/" target="_blank">
             Minimal Eisenhower
-          </a>: Simple to-do list app based on the Eisenhower Matrix framework.
+          </a>: Minimal task management app based on the Eisenhower Matrix.
         </p>
-        <img src="assets/minimal-eisenhower-demo.gif" width="700" alt="Minimal Eisenhower demo">
-      </div>
-
-      <div class="tinkering-item">
-        <p>
-          <a href="https://tree-of-lifee.vercel.app/" target="_blank">
-            Tree of Life
-          </a>: My attempt to get an overview of my life from ground up, using first principles.
-        </p>
-        <img src="assets/tree-of-life.png" width="700" alt="Tree of Life demo">
+        <img src="assets/minimal-eisenhower-demo.gif" alt="Minimal Eisenhower demo">
       </div>
     </section>
     <!-- Footer -->
     <footer>
-      <p>Open to senior IC roles · Bengaluru / Remote</p>
+      <p>Interested in Applied AI, Computer Vision and ML Systems.</p>
     </footer>
 
   </main>
-
-  <script>
-    (function updateExperienceDuration() {
-      const experienceNode = document.getElementById("experience-duration");
-
-      if (!experienceNode) return;
-
-      const startDate = new Date(2022, 5, 1);
-      const today = new Date();
-
-      let years = today.getFullYear() - startDate.getFullYear();
-      let months = today.getMonth() - startDate.getMonth();
-
-      if (today.getDate() < startDate.getDate()) {
-        months -= 1;
-      }
-
-      if (months < 0) {
-        years -= 1;
-        months += 12;
-      }
-
-      experienceNode.textContent = years + " years " + months + " months";
-    })();
-  </script>
 
 </body>
 </html>
