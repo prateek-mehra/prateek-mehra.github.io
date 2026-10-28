@@ -17,3 +17,8 @@
 .website .read-link {display:inline-block;padding:10px 0;}
 .website h1,.website h2,.website h3,.website p,.website li,.website a {overflow-wrap:anywhere;}
 @media(max-width:480px){.website{padding:24px;}.website h1{font-size:1.9rem;}.website .article-header h1{font-size:1.8rem;}}
+/* Home Blogs section */
+.website .blogs .blog-item {margin-bottom:24px;}
+.website .blogs .blog-item:last-child {margin-bottom:0;}
+.website .blogs .blog-item h3 {margin-bottom:4px;}
+.website .blogs .blog-item .meta {margin-bottom:0;}
