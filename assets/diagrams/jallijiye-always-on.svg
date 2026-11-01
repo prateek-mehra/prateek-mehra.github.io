@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="268" viewBox="0 0 720 134" role="img" aria-labelledby="title desc">
+  <title id="title">Original always-on detection pipeline</title>
+  <desc id="desc">Original pipeline: configuration and app controller feed the webcam, logs and debug overlay. Webcam frames pass through person, face and bottle detection into the presence tracker, drink heuristic, hydration state and alert worker.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 Z" fill="#aab2b8"/></marker>
+    <style>
+      .edge{fill:none;stroke:#aeb6bc;stroke-width:.85;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}
+      .node{stroke:#c5cbd0;stroke-width:.8}
+      .blue{fill:#e4f1fa;stroke:#b9d2e3}
+      .green{fill:#e2f4e9;stroke:#b9d9c5}
+      .purple{fill:#f2e9f7;stroke:#d7c4e2}
+      .neutral{fill:#f5f6f7}
+      text{font-family:Arial,Helvetica,sans-serif;fill:#18232c;text-anchor:middle;font-size:6.6px;font-weight:500}
+      .small{font-size:6px}
+    </style>
+  </defs>
+  <!-- Orthogonal connectors, behind the nodes -->
+  <path class="edge" d="M60 31 H76"/>
+  <path class="edge" d="M148 31 H174"/>
+  <path class="edge" d="M148 31 H158 V71 H164"/>
+  <path class="edge" d="M236 19 H250 V121 H267"/>
+  <path class="edge" d="M236 19 H267"/>
+  
+  
+  <path class="edge" d="M334 19 H455"/>
+  <path class="edge" d="M334 19 H345 V46 H361"/>
+  <path class="edge" d="M334 93 H361"/>
+  <path class="edge" d="M438 46 H456"/>
+  <path class="edge" d="M438 93 H448 V52 H456"/>
+  <path class="edge" d="M438 46 H448 V96 H460"/>
+  <path class="edge" d="M534 46 H552"/>
+  <path class="edge" d="M538 96 H544 V52 H552"/>
+  <path class="edge" d="M535 19 H545 V38 H552"/>
+  <path class="edge" d="M628 46 H644"/>
+  <!-- Nodes -->
+  <rect class="node neutral" x="4" y="19" width="56" height="24" rx="7"/><text x="32" y="34">⚙ Config</text>
+  <rect class="node neutral" x="76" y="19" width="72" height="24" rx="7"/><text x="112" y="34">App Controller</text>
+  <rect class="node blue" x="174" y="7" width="62" height="24" rx="7"/><text x="205" y="17">▣ Webcam</text><text x="205" y="25" class="small">5 FPS</text>
+  <rect class="node neutral" x="164" y="59" width="74" height="24" rx="7"/><text x="201" y="74">Local Event Logs</text>
+  <rect class="node neutral" x="267" y="107" width="67" height="24" rx="7"/><text x="300.5" y="122">Debug Overlay</text>
+  <rect class="node blue" x="267" y="0" width="67" height="27" rx="7"/><text x="300.5" y="11">Person Detection</text><text x="300.5" y="19">YOLOv8n</text>
+  <rect class="node blue" x="361" y="34" width="77" height="24" rx="7"/><text x="399.5" y="44">Face / Mouth ROI</text><text x="399.5" y="52">OpenCV</text>
+  <rect class="node blue" x="361" y="81" width="77" height="24" rx="7"/><text x="399.5" y="91">Bottle Detection</text><text x="399.5" y="99">Custom YOLO</text>
+  <rect class="node green" x="455" y="3" width="80" height="24" rx="7"/><text x="495" y="18">Presence Tracker</text>
+  <rect class="node blue" x="456" y="34" width="78" height="24" rx="7"/><text x="495" y="48">🥤 Drink Heuristic</text>
+  <rect class="node purple" x="460" y="84" width="78" height="24" rx="7"/><text x="499" y="94">Menu Bar or</text><text x="499" y="102">Manual Actions</text>
+  <rect class="node green" x="552" y="34" width="76" height="24" rx="7"/><text x="590" y="48">Hydration State</text>
+  <rect class="node green" x="644" y="34" width="72" height="24" rx="7"/><text x="680" y="48">⚠ Alert Worker</text>
+</svg>

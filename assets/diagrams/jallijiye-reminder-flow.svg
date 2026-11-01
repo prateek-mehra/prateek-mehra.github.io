@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="756" viewBox="0 0 700 378" role="img" aria-labelledby="title desc">
+  <title id="title">Reminder-triggered bottle detection flow</title>
+  <desc id="desc">Wait for the configured reminder interval, start the camera and bottle model, then check the recent frames. If detected, stop and wait for the next interval. If not detected within one minute, snooze for ten minutes.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="7" markerHeight="7" refX="5.8" refY="3.5" orient="auto"><path d="M0 0 L7 3.5 L0 7 Z" fill="#92999e"/></marker>
+    <style>
+      .edge{fill:none;stroke:#969da2;stroke-width:1.05;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}
+      .node{fill:#e4f2fc;stroke:#b8d4e7;stroke-width:1}
+      .start{fill:#e4f5e9;stroke:#a8d3b6;stroke-width:1}
+      .question{fill:#f7fafc;stroke:#b8d4e7;stroke-width:1;stroke-dasharray:3 3}
+      .pill{fill:#f8fbfd;stroke:#d2dce3;stroke-width:.8}
+      text{font-family:Arial,Helvetica,sans-serif;fill:#123e66;text-anchor:middle;font-size:10px;font-weight:600}
+      .small{font-size:8.5px;font-weight:500}
+    </style>
+  </defs>
+  <!-- Flow connectors -->
+  <path class="edge" d="M72 200 V221"/>
+  <path class="edge" d="M255 49 V101"/>
+  <path class="edge" d="M255 139 V183 H131 V221"/>
+  <path class="edge" d="M189 244 H262 V280 H398 V307"/>
+  <path class="edge" d="M344 172 H363 V280 H425 V307"/>
+  <path class="edge" d="M606 268 V292 H495 V307"/>
+  <!-- Under-one-minute retry goes back to the decision. -->
+  <path class="edge" d="M462 307 V87 H357 V49"/>
+  <!-- Timeout path to snooze, then another check. -->
+  <path class="edge" d="M357 49 V62 H606 V221"/>
+  <path class="edge" d="M606 268 V293 H520 V307"/>
+  <!-- Decision labels -->
+  <rect class="pill" x="238" y="104" width="35" height="24" rx="12"/><text x="255.5" y="120">Yes</text>
+  <rect class="pill" x="369" y="164" width="123" height="20" rx="10"/><text x="430.5" y="177" class="small">Not yet, and under 1 min</text>
+  <rect class="pill" x="568" y="104" width="80" height="20" rx="10"/><text x="608" y="117" class="small">No, after 1 min</text>
+  <!-- Nodes -->
+  <rect class="question" x="220" y="4" width="170" height="45" rx="11"/><text x="305" y="23">Bottle detected in at least</text><text x="305" y="35">5 of the last 10 frames?</text>
+  <rect class="start" x="5" y="172" width="133" height="28" rx="14"/><text x="71.5" y="189">App starts in background</text>
+  <rect class="node" x="12" y="221" width="177" height="46" rx="12"/><text x="100.5" y="239">Wait for configured interval</text><text x="100.5" y="251">(e.g. 30 min)</text>
+  <rect class="node" x="166" y="151" width="178" height="44" rx="12"/><text x="255" y="169">Stop detection and camera</text><text x="255" y="181">Wait for configured interval</text>
+  <rect class="node" x="519" y="221" width="176" height="46" rx="12"/><text x="607" y="239">Stop detection and camera</text><text x="607" y="251">Snooze for 10 min</text>
+  <rect class="node" x="366" y="307" width="160" height="66" rx="12"/><text x="446" y="326">Show red 'Drink water'</text><text x="446" y="338">prompt</text><text x="446" y="351">Start camera and bottle</text><text x="446" y="363">model at 5 FPS</text>
+</svg>
