@@ -40,7 +40,7 @@
 .pipeline {display:flex;align-items:stretch;justify-content:center;gap:10px;width:100%;padding:22px 14px;border:1px solid #e5eaf3;border-radius:16px;background:linear-gradient(135deg,#f8faff,#fff 55%,#f4f7ff);box-shadow:0 10px 28px rgba(31,58,138,.08);font-family:inherit;}
 .pipeline-node {display:flex;flex:1 1 0;min-width:0;flex-direction:column;justify-content:center;gap:7px;padding:16px 12px;border:1px solid #dce4f4;border-radius:12px;background:#fff;box-shadow:0 3px 10px rgba(31,58,138,.05);}
 .pipeline-encoder {border-color:#bcccf1;background:#f5f8ff;}
-.node-kicker {color:#1f3a8a;font-size:9px;font-weight:750;letter-spacing:.1em;}
+.node-kicker {min-width:0;color:#1f3a8a;font-size:9px;font-weight:750;letter-spacing:.1em;overflow-wrap:anywhere;}
 .node-title {color:#18243a;font-size:14px;font-weight:700;line-height:1.25;}
 .node-note {color:#667085;font-size:11px;line-height:1.3;}
 .pipeline-arrow {align-self:center;color:#1f3a8a;font-size:22px;font-weight:600;}
@@ -48,7 +48,7 @@
 .pipeline-output span:first-child {padding:8px 10px;border-radius:999px;background:#e8efff;}
 .pipeline-output span:last-child {padding:8px 10px;border-radius:999px;background:#f0f2f6;color:#344054;}
 .pipeline-output .or {color:#8a93a3;font-size:10px;font-weight:500;letter-spacing:0;}
-@media(max-width:640px){.pipeline{flex-direction:column;align-items:stretch;gap:8px;padding:16px 12px}.pipeline-node{padding:13px 14px}.pipeline-arrow{transform:rotate(90deg);height:22px;line-height:22px;text-align:center}.pipeline-output{flex-direction:row;min-height:52px}.pipeline-output .or{padding:0 2px}}
+@media(max-width:760px){.pipeline{flex-direction:column;align-items:stretch;gap:8px;padding:16px 12px}.pipeline-node{padding:13px 14px}.pipeline-arrow{transform:rotate(90deg);height:22px;line-height:22px;text-align:center}.pipeline-output{flex-direction:row;min-height:52px}.pipeline-output .or{padding:0 2px}}
 
 /* Clear, scalable charts for the turn detection article */
 .website .blog-body figure.viz-figure {padding:18px 20px;border:1px solid #e7ebf2;border-radius:18px;background:#fff;box-shadow:0 8px 24px rgba(31,58,138,.055);}
