@@ -4,7 +4,8 @@
 .website a:hover {text-decoration:underline;}
 .website a:focus-visible {outline:2px solid #1f3a8a;outline-offset:5px;}
 .website .site-nav a {padding:8px 0;}
-.website .site-nav a[aria-current="page"] {color:#111;font-weight:600;}
+.website .site-nav a[aria-current] {color:#111;font-weight:600;border-bottom:2px solid #1f3a8a;padding-bottom:4px;}
+.website .site-nav a[aria-current]:hover {text-decoration:none;}
 .website .article-header {margin-bottom:30px;}
 .website .article-header h1 {margin:20px 0 12px;line-height:1.25;}
 .website .blog-body h2 {margin-top:38px;}
@@ -60,3 +61,6 @@
 .website .blog-body .viz-number {fill:#18243a;font-size:34px;font-weight:730;letter-spacing:-.8px;}
 @media(max-width:640px){.website .blog-body figure.viz-figure{padding:12px 10px;border-radius:14px}.website .blog-body .viz-title{font-size:21px}.website .blog-body .viz-label{font-size:13px}.website .blog-body .viz-value{font-size:13px}}
 @media(max-width:640px){.website .blog-body .viz-title{font-size:30px}.website .blog-body .viz-sub{font-size:20px}.website .blog-body .viz-label,.website .blog-body .viz-value{font-size:23px}}
+
+/* Blog index: separate posts with the same hairline used in the nav and footer */
+.website .blog-list .read-link + .meta {margin-top:20px;padding-top:24px;border-top:1px solid #eee;}
