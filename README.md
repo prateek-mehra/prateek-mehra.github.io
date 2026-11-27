@@ -6,6 +6,6 @@ Visit the site at [prateekmehra.cv](https://prateekmehra.cv/) or browse the [blo
 
 Recent posts include:
 
-- [The Voice Is the Bill: Benchmarking an AI Paper Tutor on Sarvam](https://prateekmehra.cv/blog/guru-benchmark/)
+- [The Voice Is the Bill: Benchmarking an AI Paper Tutor on Sarvam](https://prateekmehra.cv/blog/guru/)
 - [When Are You Done Speaking? Frozen Whisper Embeddings vs Handcrafted Features](https://prateekmehra.cv/blog/turn-detection/)
 - [On-Device Vision at 4% CPU: FP16 Core ML vs PyTorch MPS](https://prateekmehra.cv/blog/jalLijiye/)
